@@ -12,8 +12,14 @@
 
 ## Persiapan
 
+Proses Instalasi git
 ![Proses Instalasi git](img/instalasi-git.png)
+
+---
+Proses Instalasi composer
 ![Proses Instalasi composer](img/instalasi-composer.png)
+
+---
 ## Praktikum 1
 <details>
 <summary>Detail</summary>
@@ -21,6 +27,7 @@
 Proses Instalasi Laravel
 ![Proses Instalasi laravel](img/instalasi-laravel.png)
 
+---
 </details>
 
 ---
@@ -44,6 +51,7 @@ Proses Menjalankan Laravel
 Menghubungkan ke Github
 ![Menghubungkan ke Github](img/menghubungkan-github.png)
 
+---
 Modifikasi Welcome-blade
 ![Modifikasi Welcome-blade](img/modifikasi-welcome_blade.png)
 </details>
