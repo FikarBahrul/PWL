@@ -22,52 +22,52 @@ masukan yang dikirim oleh pengguna dari View(bagian Backend).
 
 * **Route**
 * Route ini digunakan sebagai penghubung antara user dengan aplikasi (penentu URL).
-Route yang umum digunakan :
+Route yang umum digunakan :<br><br>
 [detail Route](DokumentasiPWL/img/detail-route.png)
 ---
 ## Praktikum 1
 <details>
 <summary>Detail</summary>
 
-* Modifikasi Web Routes /hello
+* Modifikasi Web Routes /hello<br><br>
 ![Modifikasi web routes](DokumentasiPWL/img/prak1-modifikasi_web_routes.png)
 
 * Penjelasan :
 Route Web /hello akan memanggil suatu fungsi yang bisa menampilkan kata "hello" sebagai respon
 
-* Modifikasi Web Routes /world
+* Modifikasi Web Routes /world<br><br>
 ![Modifikasi web routes](DokumentasiPWL/img/prak1-modifikasi_web_routes2.png)
 * Penjelasan :
 Route Web /world akan memanggil suatu fungsi yang bisa menampilkan kata "world" sebagai respon tanpa "hello" yang tadi
 
-* Modifikasi Web Routes / seperti landing page
+* Modifikasi Web Routes / seperti landing page<br><br>
 ![Modifikasi web routes](DokumentasiPWL/img/prak1-modifikasi_web_routes3.png)
 
-* Modifikasi Web Routes /about berisi identitas
+* Modifikasi Web Routes /about berisi identitas<br><br>
 ![Modifikasi web routes](DokumentasiPWL/img/prak1-modifikasi_web_routes4.png)
 ---
 
 * **Route Parameter**
-* Modifikasi Web Routes /user/{name}
+* Modifikasi Web Routes /user/{name}<br><br>
 ![Modifikasi web routes](DokumentasiPWL/img/prak1-modifikasi_web_routes5.png)
 * Penjelasan :
 halaman akan menampilkan teks "Nama saya [nama yang dimasukkan]" sesuai parameter tersebut melalui URL.
 
-* Modifikasi Web Routes /posts/1/comments/5
+* Modifikasi Web Routes /posts/1/comments/5<br><br>
 ![Modifikasi web routes](DokumentasiPWL/img/prak1-modifikasi_web_routes6.png)
 * Penjelasan :
 Kode Route ini menangani URL dengan dua parameter dinamis ({post} dan {comment}), lalu menampilkan teks yang berisi ID post dan ID komentar yang diakses melalui variabel $postId dan $commentId.
 
-* Modifikasi Web Routes /articles
+* Modifikasi Web Routes /articles<br><br>
 ![Modifikasi web routes](DokumentasiPWL/img/prak1-modifikasi_web_routes7.png)
 
 ---
-* Modifikasi Web Routes /user
+* Modifikasi Web Routes /user<br><br>
 ![Modifikasi web routes](DokumentasiPWL/img/prak1-modifikasi_web_routes8.png)
 * Penjelasan :
 halaman akan menampilkan teks "Nama saya" tanpa tambahan karena variabel null
 
-* Modifikasi Web Routes /user
+* Modifikasi Web Routes /user<br><br>
 ![Modifikasi web routes](DokumentasiPWL/img/prak1-modifikasi_web_routes9.png)
 * Penjelasan :
 halaman akan menampilkan teks "Nama saya John" karena variabel sudah terisi nama John.
