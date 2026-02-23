@@ -1,36 +1,49 @@
-<div style="text-align: center;">
-# <b>Laporan Praktikum Pemrograman Web lanjut</b>
+# Laporan Praktikum Pemrograman Web Lanjut
 
 ## Identitas Mahasiswa
-* |------------|------|
-* |**Nama :**| |Fikar Bahrul Santoso|
-* |**NIM :**| |244107020160|
-* |**Kelas :**| |TI-2F|
-</div>
+
+| Keterangan | Data |
+|------------|------|
+| **Nama**   | Fikar Bahrul Santoso |
+| **NIM**    | 244107020160 |
+| **Kelas**  | TI-2F |
+
+---
 
 ## Praktikum 1
 <details>
-    <summary>Detail</summary>
-    <p></p>
+<summary>Detail</summary>
+
+
+
 </details>
-<br><br>
+
+---
 
 ## Praktikum 2
 <details>
-    <summary>Detail</summary>    
-    <p></p>
+<summary>Detail</summary>
+
+
+
 </details>
-<br><br>
+
+---
 
 ## Praktikum 3
 <details>
-    <summary>Detail</summary>
-    <p></p>
+<summary>Detail</summary>
+
+
+
 </details>
-<br><br>
+
+---
 
 ## Soal
 <details>
-    <summary>Detail</summary>
-    <p></p>
+<summary>Detail</summary>
+
+
+
 </details>
