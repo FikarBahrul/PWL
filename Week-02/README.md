@@ -81,28 +81,29 @@ halaman akan menampilkan teks "Nama saya John" karena variabel sudah terisi nama
 <summary>Detail</summary>
 
 *  Generate Controller dengan php artisan make
+<br><br>
 ![Generate controller](DokumentasiPWL/img/prak2-generate_controller.png)
 
 <br><br>
 
-*  Penggunaan Controller
+*  Penggunaan Controller <br><br>
 ![Modifikasi controller](DokumentasiPWL/img/prak2-modifikasi_controller.png)
 
 * penjelasan :  jika http://127.0.0.1:8000/hello dieksekusi di browser, Laravel akan mencari route yang cocok di web.php, terus memerintah WelcomeController untuk menjalankan method hello()
 
 <br><br>
 
-* Modifikasi Controller
+* Modifikasi Controller <br><br>
 ![Modifikasi controller](DokumentasiPWL/img/prak2-modifikasi_controller2.png)
 
 <br><br>
 
-* Modifikasi Controller
+* Modifikasi Controller <br><br>
 ![Modifikasi controller](DokumentasiPWL/img/prak2-modifikasi_controller3.png)
 
 * **Resource Controller**
 
-* Modifikasi Resource Controller
+* Modifikasi Resource Controller <br><br>
 ![Modifikasi controller](DokumentasiPWL/img/prak2-modifikasi_controller4.png)
 </details>
 
@@ -112,6 +113,27 @@ halaman akan menampilkan teks "Nama saya John" karena variabel sudah terisi nama
 <details>
 <summary>Detail</summary>
 
+* Menjalankan View <br><br>
+![Menjalankan View](DokumentasiPWL/img/prak3-pemanggilan_view.png)
+<br><br>
+
+* Menjalankan View <br><br>
+![Menjalankan View](DokumentasiPWL/img/prak3-pemanggilan_view.png)
+<br><br>
+
+* Menjalankan View dari blog <br><br>
+![Menjalankan View](DokumentasiPWL/img/prak3-pemanggilan_view2.png)
+<br><br>
+
+* Penjelasan :
+/greeting diakses, Laravel meneruskan request ke method greeting() pada WelcomeController yang kemudian me-return view blog.hello dengan data name bernilai 'Fikar' sehingga browser menampilkan teks "Hello, Fikar".
+
+* Menjalankan View dengan with <br><br>
+![Menjalankan View](DokumentasiPWL/img/prak3-pemanggilan_view3.png)
+<br><br>
+
+* Penjelasan :
+ method greeting() diubah menggunakan method chaining ->with() dan view hello.blade.php ditambahkan variabel $occupation, maka browser menampilkan dua baris teks yaitu "Hello, Fikar" dan "You are College Student" yang datanya dikirim secara terpisah dari controller ke view.
 
 ---
 
