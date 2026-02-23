@@ -80,6 +80,30 @@ halaman akan menampilkan teks "Nama saya John" karena variabel sudah terisi nama
 <details>
 <summary>Detail</summary>
 
+*  Generate Controller dengan php artisan make
+![Generate controller](DokumentasiPWL/img/prak2-generate_controller.png)
+
+<br><br>
+
+*  Penggunaan Controller
+![Modifikasi controller](DokumentasiPWL/img/prak2-modifikasi_controller.png)
+
+* penjelasan :  jika http://127.0.0.1:8000/hello dieksekusi di browser, Laravel akan mencari route yang cocok di web.php, terus memerintah WelcomeController untuk menjalankan method hello()
+
+<br><br>
+
+* Modifikasi Controller
+![Modifikasi controller](DokumentasiPWL/img/prak2-modifikasi_controller2.png)
+
+<br><br>
+
+* Modifikasi Controller
+![Modifikasi controller](DokumentasiPWL/img/prak2-modifikasi_controller3.png)
+
+* **Resource Controller**
+
+* Modifikasi Resource Controller
+![Modifikasi controller](DokumentasiPWL/img/prak2-modifikasi_controller4.png)
 </details>
 
 ---
