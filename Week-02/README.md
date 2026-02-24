@@ -139,4 +139,5 @@ halaman akan menampilkan teks "Nama saya John" karena variabel sudah terisi nama
 
 </details>
 
+<a href = https://github.com/FikarBahrul/PWL/blob/main/Week-02_ProjectPOS/README.md>Project POS</a>
 ---
