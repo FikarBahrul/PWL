@@ -29,3 +29,37 @@
 
 </details>
 ---
+
+## Praktikum 2.1
+<details>
+<summary>Detail</summary>
+
+* Default Migration File yang sudah ada dari Laravel<br><br>
+![Week-03_Praktikum-02.1](DokumentasiPWL/img/Week-03/DefaultMigration_Praktikum2.1.png)
+
+* Buat File Migration baru (m_level)<br><br>
+![Week-03_Praktikum-02.1](DokumentasiPWL/img/Week-03/m_level_table-Migration_Praktikum2.1.png)
+
+* Proses Migrasi<br><br>
+![Week-03_Praktikum-02.1](DokumentasiPWL/img/Week-03/ProsesMigrasi_Praktikum2.1.png)
+
+* Buat File Migration baru (m_kategori & m_supplier)<br><br>
+![Week-03_Praktikum-02.1](DokumentasiPWL/img/Week-03/m_kategori_table&m_supplier_table-Migration_Praktikum2.1.png)
+
+* Proses Migrasi kembali<br><br>
+![Week-03_Praktikum-02.1](DokumentasiPWL/img/Week-03/ProsesMigrasi2_Praktikum2.1.png)
+</details>
+---
+
+## Praktikum 2.2
+<details>
+<summary>Detail</summary>
+
+* Migrasi m_user<br><br>
+![Week-03_Praktikum-02.2](DokumentasiPWL/img/Week-03/ProsesMigrasi3_Praktikum2.2.png)
+
+* DB Design<br><br>
+![Week-03_Praktikum-02.2](DokumentasiPWL/img/Week-03/DBdesign_praktikum2.2.png)
+
+</details>
+---
