@@ -17,7 +17,7 @@ return new class extends Migration
     $table->timestamps();
 
     $table->foreign('level_id')
-          ->references('id')
+          ->references('level_id')
           ->on('m_level')
           ->onDelete('cascade');
 });

@@ -64,3 +64,23 @@
 </details>
 ---
 
+## Praktikum 3
+<details>
+<summary>Detail</summary>
+
+* Buat Seeder untuk table m_level <br><br>
+![Week-03_Praktikum-03](DokumentasiPWL/img/Week-03/MakeSeeder_praktikum3.png)
+
+* Buat fungsi run untuk table m_level <br><br>
+![Week-03_Praktikum-03](DokumentasiPWL/img/Week-03/MakeSeederRun_praktikum3.png)
+
+* Jalankan seeder untuk m_level <br><br>
+![Week-03_Praktikum-03](DokumentasiPWL/img/Week-03/MakeSeederRun2_praktikum3.png)
+
+* Tambahkan & Jalankan seeder untuk m_user <br><br>
+![Week-03_Praktikum-03](DokumentasiPWL/img/Week-03/MakeSeederRun3_praktikum3.png)
+
+* Tambahkan & Jalankan seeder untuk tabel lain <br><br>
+</details>
+---
+
