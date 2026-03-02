@@ -84,3 +84,36 @@
 </details>
 ---
 
+## Praktikum 4
+<details>
+<summary>Detail</summary>
+
+* Buat LevelController <br><br>
+![Week-03_Praktikum-04](DokumentasiPWL/img/Week-03/LevelController_Praktikum4.png)
+
+* Modifikasi Web.PHP <br><br>
+![Week-03_Praktikum-04](DokumentasiPWL/img/Week-03/ModifiedWeb.php_Praktikum4.png)
+
+* Modifikasi Level Controller <br><br>
+![Week-03_Praktikum-04](DokumentasiPWL/img/Week-03/ModifiedLevelController.php_Praktikum4.png)
+<br><br>
+
+* Modifikasi Level Controller <br><br>
+![Week-03_Praktikum-04](DokumentasiPWL/img/Week-03/ModifiedLevelController.php2_Praktikum4.png)
+<br><br>
+
+* Modifikasi Level Controller <br><br>
+![Week-03_Praktikum-04](DokumentasiPWL/img/Week-03/ModifiedLevelController.php3_Praktikum4.png)
+<br><br>
+
+* Modifikasi Level Controller <br><br>
+![Week-03_Praktikum-04](DokumentasiPWL/img/Week-03/ModifiedLevelController.php4_Praktikum4.png)
+<br><br>
+
+* Modifikasi Level Controller <br><br>
+![Week-03_Praktikum-04](DokumentasiPWL/img/Week-03/ModifiedLevelController.php5_Praktikum4.png)
+
+* Eksekusi LevelBlade<br><br>
+![Week-03_Praktikum-04](DokumentasiPWL/img/Week-03/Level.Blade.php_Praktikum4.png)
+</details>
+---
