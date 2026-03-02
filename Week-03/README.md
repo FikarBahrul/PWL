@@ -117,3 +117,23 @@
 ![Week-03_Praktikum-04](DokumentasiPWL/img/Week-03/Level.Blade.php_Praktikum4.png)
 </details>
 ---
+
+## Praktikum 5
+<details>
+<summary>Detail</summary>
+
+* Eksekusi Kategori<br><br>
+![Week-03_Praktikum-05](DokumentasiPWL/img/Week-03/Kategori_Praktikum5.png)
+
+</details>
+---
+
+## Praktikum 6
+<details>
+<summary>Detail</summary>
+
+* Eksekusi User<br><br>
+![Week-03_Praktikum-06](DokumentasiPWL/img/Week-03/User_Praktikum6.png)
+
+</details>
+---
