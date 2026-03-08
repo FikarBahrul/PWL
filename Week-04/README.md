@@ -66,3 +66,20 @@ Kode tersebut digunakan untuk mencari data user dengan ID = 1 menggunakan findOr
 ![Praktikum 2.1 - Hasil pada Browser](DokumentasiPWL/img/Week-04/RetrievingSingleModels_browser2-Praktikum-2.1.png)
 </details>
 ---
+
+## Praktikum 2.2
+<details>
+<summary>Detail</summary>
+
+![Praktikum 2.2 - Hasil pada Browser](DokumentasiPWL/img/Week-04/NotFoundExceptions_browser-Praktikum2.2.png)
+UserModel::findOrFail(1)
+Kode ini digunakan untuk mencari data user dengan ID = 1, dan jika data tidak ditemukan maka Laravel otomatis menampilkan error 404
+
+<br>
+<br>
+
+![Praktikum 2.2 - Hasil pada Browser](DokumentasiPWL/img/Week-04/NotFoundExceptions_browser2-Praktikum2.2.png)
+Kode ini digunakan untuk mencari data user dengan username manager9, dan jika tidak ada data yang ditemukan maka Laravel akan menampilkan error 404
+
+</details>
+---
