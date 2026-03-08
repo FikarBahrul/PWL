@@ -135,3 +135,42 @@ Setelah ->save() dipanggil, wasChanged() mengembalikan true pada field yang baru
 
 </details>
 ---
+
+## Praktikum 2.6
+
+<details>
+<summary>Detail</summary>
+
+![Praktikum 2.6 - Hasil pada Browser](DokumentasiPWL/img/Week-04/CRUD_browser-Praktikum2.6.png)
+
+Method all() digunakan untuk mengambil seluruh data dari tabel m_user dan mengirimkannya ke view user.blade.php melalui variabel $data. Data kemudian ditampilkan dalam bentuk tabel HTML menggunakan @foreach, disertai link untuk aksi ubah dan hapus pada setiap baris data (Read dalam CRUD)
+
+![Praktikum 2.6 - Hasil pada Browser](DokumentasiPWL/img/Week-04/CRUD_browser2-Praktikum2.6.png)
+
+Setelah interaksi dengan link "+ Tambah User" akan langsung dialihkan menuju form tambah
+
+![Praktikum 2.6 - Hasil pada Browser](DokumentasiPWL/img/Week-04/CRUD_browser3-Praktikum2.6.png)
+
+ketika sudah submit akan terbaca kembali di halaman user.
+
+<br><br>
+
+![Praktikum 2.6 - Hasil pada Browser](DokumentasiPWL/img/Week-04/CRUD_browser4-Praktikum2.6.png)
+
+Setelah interaksi dengan link aksi "Ubah" akan langsung dialihkan menuju form Ubah Data
+
+![Praktikum 2.6 - Hasil pada Browser](DokumentasiPWL/img/Week-04/CRUD_browser5-Praktikum2.6.png)
+
+ketika sudah submit akan terbaca kembali di halaman user dengan perubahan yang tersimpan.
+
+<br><br>
+
+![Praktikum 2.6 - Hasil pada Browser](DokumentasiPWL/img/Week-04/CRUD_browser6-Praktikum2.6.png)
+
+Setelah interaksi dengan link aksi "Hapus" akan langsung menghapus data pada tabel
+
+![Praktikum 2.6 - Hasil pada Browser](DokumentasiPWL/img/Week-04/CRUD_browser7-Praktikum2.6.png)
+<br>
+
+</details>
+---
