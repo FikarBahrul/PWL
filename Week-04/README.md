@@ -83,3 +83,13 @@ Kode ini digunakan untuk mencari data user dengan username manager9, dan jika ti
 
 </details>
 ---
+
+## Praktikum 2.3
+<details>
+<summary>Detail</summary>
+
+![Praktikum 2.3 - Hasil pada Browser](DokumentasiPWL/img/Week-04/RetreivingAggregrates_browser-Praktikum-2.3.png)
+Kode tersebut digunakan untuk menghitung jumlah data user yang memiliki level_id = 2 pada tabel menggunakan method count() dari Eloquent. Hasil perhitungan tersebut kemudian ditampilkan menggunakan dd() untuk melihat jumlah data yang ditemukan.
+![Praktikum 2.3 - Hasil pada Browser](DokumentasiPWL/img/Week-04/RetreivingAggregrates_browser2-Praktikum-2.3.png)
+</details>
+---
