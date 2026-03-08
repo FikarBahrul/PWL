@@ -188,7 +188,7 @@ Praktikum ini mengimplementasikan relasi antar tabel menggunakan Eloquent ORM. R
 
 ![Praktikum 2.7 - Hasil pada Browser](DokumentasiPWL/img/Week-04/Relationship-Praktikum2.7.png)
 
-Pada praktikum ini, LevelModel dibuat untuk mengelola tabel m_level. Kemudian ditambahkan relasi pada UserModel sehingga data level dapat diakses langsung dari objek user menggunakan `$user->level->level_nama`. Pada view, tabel User sekarang menampilkan kolom tambahan yaitu Kode Level dan Nama Level yang diambil dari relasi tersebut.
+Pada praktikum ini, LevelModel dibuat untuk mengelola tabel m_level. Kemudian ditambahkan relasi pada UserModel sehingga data level dapat diakses langsung dari objek user menggunakan `$user->level->level_nama`.Pada view, tabel User sekarang menampilkan kolom tambahan yaitu Kode Level dan Nama Level yang diambil dari relasi tersebut.
 
 </details>
 ---
