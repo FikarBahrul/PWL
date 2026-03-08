@@ -38,3 +38,31 @@ Dari hasil pengujian dapat disimpulkan bahwa `$fillable` berfungsi sebagai mekan
 
 </details>
 ---
+
+## Praktikum 2.1
+<details>
+<summary>Detail</summary>
+Fungsi Retrieving Single Models adalah untuk mengambil data baris dari database
+<br>
+find($id) akan mengambil data berdasarkan primary key (pada kasus ini, id 1 diambil)
+
+![Praktikum 2.1 - Hasil pada Browser](DokumentasiPWL/img/Week-04/RetrievingSingleModels_browser-Praktikum-2.1.png)
+<br>
+$user = UserModel::where('level_id', 1)->first(); 
+
+akan mengambil data dengan kriteria level_id yang sudah ditentukan (pada kasus ini, level_id 1)
+<br>
+
+ $user = UserModel::firstWhere('level_id', 1); 
+
+sama seperti sebelumnya namun yang baris pertama didahulukan.
+
+<br>
+
+ $user = UserModel::findOr(1, ['username','nama'], function () {abort(404);});
+ <br>
+Kode tersebut digunakan untuk mencari data user dengan ID = 1 menggunakan findOr(), dan jika data tidak ditemukan maka akan menjalankan fungsi abort(404) sehingga halaman menampilkan error 404.
+
+![Praktikum 2.1 - Hasil pada Browser](DokumentasiPWL/img/Week-04/RetrievingSingleModels_browser2-Praktikum-2.1.png)
+</details>
+---
