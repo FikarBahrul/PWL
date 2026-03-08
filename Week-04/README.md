@@ -117,3 +117,21 @@ membuat data baru manager33 (Method firstOrNew hanya membuat objek di memori tan
 ![Praktikum 2.4 - Hasil pada Browser](DokumentasiPWL/img/Week-04/RetreivingOrCreatingModels4-Praktikum2.4.png)
 </details>
 ---
+
+## Praktikum 2.5
+
+<details>
+<summary>Detail</summary>
+
+![Praktikum 2.5 - Hasil pada Browser](DokumentasiPWL/img/Week-04/AttributeChanges_browser_Praktikum2.5.png)
+
+Setelah ->save() dipanggil, perubahan pada objek tersimpan ke database sehingga isDirty() mengembalikan false dan isClean() mengembalikan true, menandakan bahwa objek sudah sinkron dengan data di database. Fungsi dd() digunakan untuk menampilkan nilai isDirty() secara langsung di browser sebagai debugging
+<br>
+
+![Praktikum 2.5 - Hasil pada Browser](DokumentasiPWL/img/Week-04/AttributeChanges_browser2_Praktikum2.5.png)
+
+Setelah ->save() dipanggil, wasChanged() mengembalikan true pada field yang baru saja diubah dan tersimpan, seperti username yang berubah dari manager11 menjadi manager12. Berbeda dengan isDirty(), wasChanged() hanya bernilai true setelah data berhasil disimpan ke database, bukan sebelumnya
+<br>
+
+</details>
+---
