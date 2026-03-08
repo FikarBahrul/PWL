@@ -174,3 +174,21 @@ Setelah interaksi dengan link aksi "Hapus" akan langsung menghapus data pada tab
 
 </details>
 ---
+
+## Praktikum 2.7
+
+<details>
+<summary>Detail</summary>
+
+### Eloquent Relationships
+
+Praktikum ini mengimplementasikan relasi antar tabel menggunakan Eloquent ORM. Relasi yang dibuat adalah:
+- **belongsTo**: UserModel belongs to LevelModel (many-to-one)
+- **hasMany**: LevelModel has many UserModel (one-to-many)
+
+![Praktikum 2.7 - Hasil pada Browser](DokumentasiPWL/img/Week-04/Relationship-Praktikum2.7.png)
+
+Pada praktikum ini, LevelModel dibuat untuk mengelola tabel m_level. Kemudian ditambahkan relasi pada UserModel sehingga data level dapat diakses langsung dari objek user menggunakan `$user->level->level_nama`. Pada view, tabel User sekarang menampilkan kolom tambahan yaitu Kode Level dan Nama Level yang diambil dari relasi tersebut.
+
+</details>
+---

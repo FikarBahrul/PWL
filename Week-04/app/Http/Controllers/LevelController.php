@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\LevelModel;
 
 class LevelController extends Controller
 {
@@ -18,7 +19,9 @@ class LevelController extends Controller
         // $row = DB::delete('delete from m_level where level_kode = ?', ['CUS']);
         // return 'Delete data berhasil. Jumlah data yang dihapus: ' . $row . ' baris';
 
-        $data = DB::select('select * from m_level');
+        // $data = DB::select('select * from m_level');
+        // Using Eloquent ORM
+        $data = LevelModel::all();
         return view('level', ['data' => $data]);
     }
 }
