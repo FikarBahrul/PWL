@@ -31,6 +31,8 @@ Pada langkah pertama,file **UserModel.php** dimodifikasi dengan menambahkan vari
 Selanjutnya pada **UserController.php**, proses penambahan data diubah menggunakan metode mass assignment dengan memasukkan data dalam bentuk array. Dengan cara ini, Laravel akan secara otomatis mengisi atribut model sesuai dengan kolom yang telah didaftarkan pada `$fillable`.
 
 ![Praktikum 1 - Hasil pada Browser](DokumentasiPWL/img/Week-04/$fillable_browser-Praktikum-01.png)
+<br><br>
+![Praktikum 1 - Hasil pada Browser](DokumentasiPWL/img/Week-04/$fillable_browser2-Praktikum-01.png)
 
 Dari hasil pengujian dapat disimpulkan bahwa `$fillable` berfungsi sebagai mekanisme pengamanan dalam Eloquent ORM untuk mengontrol atribut yang dapat diisi secara massal. Jika suatu kolom tidak terdaftar di `$fillable`, maka Laravel tidak akan memproses input tersebut saat melakukan penyimpanan data ke database.
 
