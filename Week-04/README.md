@@ -93,3 +93,27 @@ Kode tersebut digunakan untuk menghitung jumlah data user yang memiliki level_id
 ![Praktikum 2.3 - Hasil pada Browser](DokumentasiPWL/img/Week-04/RetreivingAggregrates_browser2-Praktikum-2.3.png)
 </details>
 ---
+
+
+## Praktikum 2.4
+<details>
+<summary>Detail</summary>
+
+![Praktikum 2.4 - Hasil pada Browser](DokumentasiPWL/img/Week-04/RetreivingOrCreatingModels-Praktikum2.4.png)
+
+$user = UserModel::firstOrCreate([]);
+
+<br>
+
+akan mencari keseluruhan data, jika tidak ditemukan maka akan buat baru
+
+![Praktikum 2.4 - Hasil pada Browser](DokumentasiPWL/img/Week-04/RetreivingOrCreatingModels2-Praktikum2.4.png)
+
+![Praktikum 2.4 - Hasil pada Browser](DokumentasiPWL/img/Week-04/RetreivingOrCreatingModels3-Praktikum2.4.png)
+
+<br>
+membuat data baru manager33 (Method firstOrNew hanya membuat objek di memori tanpa langsung menyimpan ke database, sehingga diperlukan pemanggilan ->save() agar dapat terlihat di database)
+
+![Praktikum 2.4 - Hasil pada Browser](DokumentasiPWL/img/Week-04/RetreivingOrCreatingModels4-Praktikum2.4.png)
+</details>
+---
