@@ -151,3 +151,69 @@ Laravel secara otomatis melakukan hashing password melalui mutator yang sudah te
 </details>
 
 ---
+## Jobsheet 3
+<details>
+<summary>Detail</summary>
+Membuat Model Category
+<br><br>
+
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS3_ModelMigrateCategory.png)
+
+Mendesain Model Category
+<br><br>
+
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS3_ModelMigrateCategory2.png)
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS3_ModelMigrateCategory3.png)
+
+Mengatur fillable agar data dapat disimpan menggunakan mass assignment
+<br><br>
+
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS3_ModelMigrateCategoryFillable.png)
+
+Membuat Model Post
+<br><br>
+
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS3_ModelMigratePost.png)
+
+Mendesain Model Post
+<br><br>
+
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS3_PostTableStructure.png)
+
+Mengatur Model Post (Fillable, Casting & Relation)
+<br><br>
+
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS3_PostFillableCastRelation.png)
+
+Membuat Resource Categories
+<br><br>
+
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS3_CategoriesSidebar.png)
+
+Edit Form Categories
+<br><br>
+
+![Jobsheet-03_Filament](DokumentasiPWL/img//JS3_EditFormCategories.png)
+![Jobsheet-03_Filament](DokumentasiPWL/img//JS3_EditFormCategories2.png)
+
+Edit Table Categories
+<br><br>
+
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS3_EditTableCategories.png)
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS3_EditTableCategories2.png)
+
+## E. Analisis & Diskusi
+
+### 1. Mengapa kita perlu $fillable?
+Property `$fillable` mendefinisikan kolom mana saja yang diizinkan untuk mass assignment (penyimpanan massal). Tanpa `$fillable`, Laravel akan mencegah semua kolom diedit sekaligus demi keamanan. Filament membutuhkan `$fillable` untuk dapat menyimpan data form ke database menggunakan model Eloquent secara otomatis.
+
+### 2. Apa fungsi $casts pada Laravel?
+`$casts` mengkonversi tipe data database otomatis menjadi tipe PHP yang sesuai. Misalnya, field `tags` dalam database berupa JSON string, tapi dengan `'tags' => 'array'`, Laravel otomatis mengonversi menjadi PHP array saat query. Casting juga membuat date fields menjadi Carbon instance dan boolean fields benar-benar boolean, sehingga kode lebih aman dan readable.
+
+### 3. Apa perbedaan integer biasa dengan foreign key?
+Integer biasa hanya menyimpan angka tanpa kaitan ke tabel lain, sehingga tidak ada proteksi integritas data. Foreign key adalah integer yang menunjuk ke primary key tabel lain dan database akan mencegah menyimpan nilai yang tidak ada di tabel referensi. Foreign key juga memastikan data tetap konsisten dan menghindari data orphan (data tanpa referensi).
+
+### 4. Bagaimana jika category dihapus tetapi masih ada post?
+Tanpa foreign key constraint, post akan tetap ada dengan `category_id` yang menunjuk ke category yang tidak lagi ada. Dengan foreign key yang dikonfigurasi `onDelete('cascade')`, semua post akan otomatis terhapus jika categorynya dihapus. Atau dengan `onDelete('restrict')`, penghapusan category akan ditolak jika masih ada post terkait, memaksa delete post terlebih dahulu.
+
+</details>
