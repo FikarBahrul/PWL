@@ -217,3 +217,7 @@ Integer biasa hanya menyimpan angka tanpa kaitan ke tabel lain, sehingga tidak a
 Tanpa foreign key constraint, post akan tetap ada dengan `category_id` yang menunjuk ke category yang tidak lagi ada. Dengan foreign key yang dikonfigurasi `onDelete('cascade')`, semua post akan otomatis terhapus jika categorynya dihapus. Atau dengan `onDelete('restrict')`, penghapusan category akan ditolak jika masih ada post terkait, memaksa delete post terlebih dahulu.
 
 </details>
+
+## Kesimpulan
+
+Filament PHP v4 terbukti mempercepat proses pembangunan admin panel berbasis Laravel secara signifikan. Dengan memanfaatkan fitur Resource, Form Builder, dan Table Builder, pembuatan halaman CRUD tidak lagi membutuhkan banyak kode manual. Struktur database yang dirancang dengan baik — mencakup penggunaan `$fillable`, `$casts`, dan relasi antar model — menjadi fondasi penting sebelum membangun fitur lebih lanjut. Keseluruhan praktikum ini menunjukkan bahwa kombinasi Laravel dan Filament dapat menjadi solusi efisien dalam pengembangan aplikasi web yang membutuhkan panel administrasi.
