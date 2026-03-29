@@ -88,3 +88,66 @@ SQLite ringan karena berbasis file tunggal, cocok untuk prototipe cepat, testing
 Panel Builder berfungsi menghasilkan struktur panel admin Filament secara otomatis, termasuk provider panel, route panel, halaman bawaan, serta integrasi aset. Dengan Panel Builder, pembuatan area admin menjadi terstandar, cepat, dan mudah dikembangkan ke banyak panel jika dibutuhkan.
 
 </details>
+
+---
+## Jobsheet 2
+<details>
+<summary>Detail</summary>
+membuat resource user
+<br><br>
+
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS2_ResoUser.png)
+
+tampilan browser
+<br><br>
+
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS2_UserSidebar.png)
+
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS2_UserSidebar2.png)
+
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS2_UserSidebar3.png)
+
+modifikasi form user (CreateEdit)
+<br><br>
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS2_ModifiedUserForm.png)
+
+tampilan browser
+<br><br>
+
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS2_UserSidebarAfterModified.png)
+
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS2_UserSidebarAfterModified2.png)
+
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS2_UserSidebarAfterModified3.png)
+
+modifikasi form user (Read)
+<br><br>
+
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS2_UserSidebarRead.png)
+
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS2_UserSidebarRead2.png)
+
+modifikasi icon user
+<br><br>
+
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS2_UserSidebarIcon.png)
+
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS2_UserSidebarIcon2.png)
+
+## E. Analisis & Diskusi
+
+### 1. Mengapa Filament dapat membuat CRUD tanpa banyak coding?
+Filament menggunakan sistem code generation berbasis artisan. Dengan satu perintah `make:filament-resource`, semua file yang dibutuhkan untuk CRUD sudah otomatis terbuat. Form Builder dan Table Builder Filament bersifat deklaratif sehingga developer cukup mendefinisikan field yang dibutuhkan tanpa menulis logika tampilan dari nol.
+
+### 2. Apa perbedaan Form Schema dan Table Schema?
+Form Schema (`UserForm.php`) mendefinisikan field input yang digunakan pada halaman Create dan Edit. Table Schema (`UsersTable.php`) mendefinisikan kolom yang ditampilkan pada halaman List beserta fitur sorting, searching, dan action button seperti Edit dan Delete.
+
+### 3. Bagaimana jika kita ingin menambahkan validasi email unik?
+Tambahkan method `->unique(ignoreRecord: true)` pada field email di `UserForm.php`. Parameter `ignoreRecord: true` digunakan agar validasi tidak konflik saat data sedang diedit, sehingga email yang sama tidak dianggap duplikat oleh record itu sendiri.
+
+### 4. Mengapa password tidak perlu kita hash manual?
+Laravel secara otomatis melakukan hashing password melalui mutator yang sudah terdefinisi di model `User`. Saat data disimpan menggunakan Eloquent, Laravel otomatis memanggil `bcrypt()` di balik layar sehingga developer tidak perlu melakukannya secara manual.
+
+</details>
+
+---
