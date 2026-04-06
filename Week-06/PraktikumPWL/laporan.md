@@ -104,3 +104,68 @@ RichEditor menghasilkan konten HTML (WYSIWYG), cocok untuk pengguna non-teknis k
 </details>
 
 ---
+
+
+## Jobsheet 2
+<details>
+<summary>Detail</summary>
+
+**Menambahkan 3 Kolom**
+<br>
+
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02_CreateColumn.png)
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02_CreateColumn2.png)
+
+**atau Menambahkan 2 Kolom**
+<br>
+
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02_CreateColumn3.png)
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02_CreateColumn4.png)
+
+**Section Kolom**
+<br>
+
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02_CreateColumnSection.png)
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02_CreateColumnSection2.png)
+
+**Section Meta**
+<br>
+
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02_CreateColumnSectionMeta.png)
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02_CreateColumnSectionMeta2.png)
+
+**Section Layout**
+<br>
+
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02_CreateColumnSectionLayoutSpan.png)
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02_CreateColumnSectionLayoutSpan2.png)
+
+**Section Group Layout**
+<br>
+
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02_CreateColumnSectionGroupLayout.png)
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02_CreateColumnSectionGroupLayout2.png)
+
+**Mengatur Lebar Field Individual**
+<br>
+
+![Jobsheet-02_Filament](DokumentasiPWL/img//JS02_CreateColumnField.png)
+![Jobsheet-02_Filament](DokumentasiPWL/img//JS02_CreateColumnField2.png)
+
+## E. Analisis & Diskusi
+
+### 1. Mengapa layout form penting dalam aplikasi admin?
+Layout form yang baik membuat proses input data lebih cepat, minim salah isi, dan lebih nyaman dipakai. Dalam aplikasi admin, pengguna sering bekerja dengan banyak field sekaligus, jadi struktur visual yang jelas membantu mereka memahami prioritas data, alur pengisian, dan relasi antar field. Hasilnya, efisiensi kerja meningkat dan kualitas data yang masuk juga lebih konsisten.
+
+### 2. Apa perbedaan Section dan Group?
+`Section` adalah komponen pembungkus yang menampilkan blok UI lengkap dengan judul dan deskripsi, sehingga cocok untuk membagi form berdasarkan konteks bisnis (misalnya Post Details, Image Upload, Meta Information). `Group` lebih berfungsi sebagai pengatur layout tanpa elemen header visual yang menonjol. Jadi, `Section` fokus pada struktur konten yang terlihat pengguna, sedangkan `Group` fokus pada pengaturan tata letak komponen.
+
+### 3. Kapan kita menggunakan columnSpanFull()?
+`columnSpanFull()` digunakan ketika sebuah field perlu mengambil lebar penuh grid agar lebih nyaman digunakan. Contoh umum: editor konten panjang, textarea besar, atau komponen upload yang butuh ruang horizontal lebih luas. Dengan `columnSpanFull()`, field tidak terbatasi pembagian kolom kecil, sehingga pengalaman input menjadi lebih baik.
+
+### 4. Apa keuntungan sistem grid 12 kolom?
+Grid 12 kolom memberi fleksibilitas tinggi dalam menyusun layout karena angka 12 mudah dibagi menjadi berbagai kombinasi (1/2, 1/3, 1/4, 2/3, dan seterusnya). Ini memudahkan pembuatan form yang proporsional, konsisten, dan responsif di berbagai ukuran layar. Dalam praktiknya, developer lebih mudah mengatur komponen prioritas tinggi agar lebih dominan, sementara komponen pendukung ditempatkan pada area yang lebih kecil.
+
+</details>
+
+---
