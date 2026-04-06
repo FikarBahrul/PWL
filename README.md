@@ -17,5 +17,7 @@
 | **Minggu 2**    | <a href="https://github.com/FikarBahrul/PWL/blob/main/Week-02/README.md">Week-02</a> |
 | **Minggu 2 Proyek**  | <a href="https://github.com/FikarBahrul/PWL/blob/main/Week-02_ProjectPOS/README.md">Week-02_ProjectPOS</a> |
 | **Minggu 3**  | <a href="https://github.com/FikarBahrul/PWL/blob/main/Week-03/README.md">Week-03</a> |
+| **Minggu 4**  | <a href="https://github.com/FikarBahrul/PWL/blob/main/Week-04/README.md">Week-04</a> |
+| **Minggu 5**  | <a href="https://github.com/FikarBahrul/PWL/blob/main/Week-05/PraktikumPWL/README.md">Week-05</a> |
 
 ---
