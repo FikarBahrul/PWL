@@ -12,7 +12,6 @@ use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Schemas\Components\Section;
-use Filament\Support\Icons\Heroicons;
 use Filament\Schemas\Components\Group;
 
 class PostForm
@@ -24,16 +23,24 @@ class PostForm
                 //section 1 - post details
                 Section::make("Post Details")
                     ->description("Fill in the details of the post")
-                    // ->icon(Heroicons::RocketLaunch)
                     ->icon("heroicon-o-document-text")
                     ->schema([
-                        TextInput::make("title"),
-                        TextInput::make("slug"),
-                        Select::make("category_id")
-                            ->relationship("category", "name")
-                            ->preload()
-                            ->searchable(),
-                        ColorPicker::make("color"),
+                        Group::make([
+                            TextInput::make("title")
+                                ->rules("required|min:3|max:10"),
+                            TextInput::make("slug")
+                                ->rules("required")
+                                ->unique()
+                                ->validationMessages([
+                                    "unique" => "Slug must be unique",
+                                ]),
+                            Select::make("category_id")
+                                ->relationship("category", "name")
+                                ->required()
+                                ->preload()
+                                ->searchable(),
+                            ColorPicker::make("color"),
+                        ])->columns(2),
                         MarkdownEditor::make("content"),
                     ])
                     ->columnSpan(2),
@@ -44,6 +51,7 @@ class PostForm
                     Section::make("Image Upload")
                         ->schema([
                             FileUpload::make("image")
+                                ->required()
                                 ->disk("public")
                                 ->directory("posts")
                                 ->deletable(),

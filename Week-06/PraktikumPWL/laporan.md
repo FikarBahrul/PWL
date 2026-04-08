@@ -169,3 +169,62 @@ Grid 12 kolom memberi fleksibilitas tinggi dalam menyusun layout karena angka 12
 </details>
 
 ---
+
+## Jobsheet 3
+<details>
+<summary>Detail</summary>
+
+**Method Required**
+<br>
+
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-MethodRequired.png)
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-MethodRequired2.png)
+
+**Method Rules()**
+<br>
+
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-MethodRule.png)
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-MethodRule2.png)
+
+**Method Rules()(multiple validation)**
+<br>
+
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-MethodRuleMultiValidation.png)
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-MethodRuleMultiValidation2.png)
+
+**Method Unique**
+<br>
+
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-MethodUnique.png)
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-MethodUnique2.png)
+
+**Method Unique different message**
+<br>
+
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-MethodUniqueDifferentMessage.png)
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-MethodUniqueDifferentMessage2.png)
+
+**Example**
+<br>
+
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-MethodFullValidation.png)
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-MethodFullValidation2.png)
+
+
+## K. Analisis & Diskusi
+
+### 1. Mengapa validasi penting pada admin panel?
+Validasi penting karena admin panel adalah titik masuk utama data ke sistem. Jika input tidak divalidasi, data bisa tidak konsisten (misalnya judul kosong, slug ganda, format tanggal salah) dan berakibat pada error saat ditampilkan atau diproses. Dengan validasi, kualitas data lebih terjaga, bug berkurang, dan proses bisnis menjadi lebih stabil.
+
+### 2. Apa perbedaan validasi client-side dan server-side?
+Validasi client-side berjalan di browser dan memberi umpan balik cepat ke pengguna sebelum data dikirim, sehingga pengalaman input lebih nyaman. Namun, validasi ini tidak boleh dijadikan satu-satunya perlindungan karena bisa dilewati. Validasi server-side berjalan di backend (Laravel/Filament), bersifat final, dan wajib untuk menjamin keamanan serta integritas data yang benar-benar disimpan.
+
+### 3. Mengapa unique otomatis bekerja saat edit data?
+Pada mode edit, Filament/Laravel biasanya menyesuaikan aturan `unique` agar mengabaikan record yang sedang diedit (`ignore current record`). Artinya, nilai lama milik data tersebut tidak dianggap duplikat terhadap dirinya sendiri. Karena itu, field tetap lolos validasi jika tidak diubah, tetapi akan gagal jika nilainya sama dengan milik record lain.
+
+### 4. Kapan kita perlu menggunakan rules array dibanding string?
+`rules` dalam bentuk string cocok untuk aturan sederhana, misalnya `required|min:3|max:10`. Sementara itu, bentuk array lebih tepat untuk aturan kompleks, aturan dinamis, atau kombinasi dengan objek rule khusus (misalnya `Rule::unique(...)->ignore(...)`). Array juga lebih mudah dibaca dan dirawat saat jumlah aturan makin banyak.
+
+
+
+</details>
