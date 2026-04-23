@@ -84,3 +84,50 @@ Wizard tidak selalu cocok untuk semua form. Untuk form sederhana dengan sedikit 
 </details>
 
 ---
+
+## Jobsheet 2
+<details>
+<summary>Detail</summary>
+
+**Section Product Info**
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02-SectionProductInfo.png)
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02-SectionProductInfo2.png)
+<br><br>
+
+**Section Product Price and Stock**
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02-SectionProductInfo3.png)
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02-SectionProductInfo4.png)
+<br><br>
+
+**Section Product Image and Status**
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02-SectionProductInfo5.png)
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02-SectionProductInfo6.png)
+<br><br>
+
+**Section Product Price and Stock Entry Icon**
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02-SectionProductInfo7.png)
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02-SectionProductInfo8.png)
+<br><br>
+
+**Section Product Creation Date**
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02-SectionProductInfo9.png)
+![Jobsheet-02_Filament](DokumentasiPWL/img/JS02-SectionProductInfo10.png)
+<br><br>
+
+## L. Analisis & Diskusi
+
+### 1. Mengapa View Page tidak cocok menggunakan form input?
+View Page berfungsi untuk menampilkan data secara read-only, bukan untuk mengubah data. Jika komponen form input dipakai di halaman view, pengguna bisa mengira data dapat diedit langsung, sehingga membingungkan alur penggunaan. Karena itu, View Page lebih tepat memakai komponen display seperti Infolist agar informasi tetap jelas, rapi, dan konsisten dengan tujuan halaman.
+
+### 2. Apa perbedaan TextColumn dan TextEntry?
+`TextColumn` digunakan pada Table (halaman list) untuk menampilkan nilai dalam bentuk kolom pada banyak record sekaligus. `TextEntry` digunakan pada Infolist (halaman detail/view) untuk menampilkan nilai satu record secara lebih terstruktur. Singkatnya, `TextColumn` untuk konteks daftar data, sedangkan `TextEntry` untuk konteks detail data.
+
+### 3. Kapan kita menggunakan badge?
+Badge digunakan ketika nilai field perlu ditonjolkan secara visual, terutama untuk status atau kategori singkat seperti aktif/nonaktif, featured/non-featured, atau level prioritas. Dengan badge, pengguna bisa mengenali kondisi data lebih cepat tanpa harus membaca teks panjang, sehingga proses monitoring di admin panel menjadi lebih efisien.
+
+### 4. Apa keuntungan menggunakan IconEntry untuk boolean?
+`IconEntry` sangat efektif untuk data boolean karena informasi true/false bisa dipahami secara instan melalui ikon (misalnya centang dan silang). Dibanding teks biasa, ikon lebih cepat dipindai di layar dan membantu mengurangi salah baca saat melihat banyak data. Selain itu, tampilan jadi lebih ringkas dan konsisten di halaman detail.
+
+</details>
+
+---
