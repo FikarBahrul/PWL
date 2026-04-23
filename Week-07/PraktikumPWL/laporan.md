@@ -131,3 +131,48 @@ Badge digunakan ketika nilai field perlu ditonjolkan secara visual, terutama unt
 </details>
 
 ---
+
+## Jobsheet 3
+<details>
+<summary>Detail</summary>
+
+**Merubah Section Product menjadi Tabs**
+<br><br>
+
+**Merubah Section Product Info menjadi Tabs**
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-ChangeSectionToTabs.png)
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-ChangeSectionToTabs2.png)
+<br><br>
+
+**Merubah Section Product Price and Stock menjadi Tabs**
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-ChangeSectionToTabs3.png)
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-ChangeSectionToTabs4.png)
+<br><br>
+
+**Merubah Section Product Image and Status menjadi Tabs**
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-ChangeSectionToTabs5.png)
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-ChangeSectionToTabs6.png)
+<br><br>
+
+**Merubah Tampilan Menjadi Vertikal**
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-ChangeSectionToTabs7.png)
+![Jobsheet-03_Filament](DokumentasiPWL/img/JS03-ChangeSectionToTabs8.png)
+
+<br><br>
+
+## K. Analisis & Diskusi
+
+### 1. Kapan kita menggunakan Tabs dibanding Section?
+Tabs digunakan saat konten cukup banyak dan bisa dikelompokkan ke beberapa kategori agar tampilan tidak terlalu panjang. Dibanding Section biasa yang ditampilkan sekaligus dalam satu halaman, Tabs membantu pengguna fokus pada satu kelompok informasi dalam satu waktu. Pendekatan ini cocok ketika data memiliki struktur yang jelas per bagian, misalnya informasi umum, harga-stok, dan media-status.
+
+### 2. Apa kelebihan Tabs untuk data panjang?
+Kelebihan utama Tabs adalah menjaga antarmuka tetap rapi dan ringkas meskipun field banyak. Pengguna tidak perlu scroll terlalu jauh karena cukup berpindah tab sesuai kebutuhan. Selain itu, proses membaca data menjadi lebih cepat karena informasi tersusun per konteks, sehingga beban visual berkurang dan kemungkinan salah input ikut menurun.
+
+### 3. Apakah Tabs bisa digunakan pada Form juga?
+Ya, Tabs bisa digunakan pada Form. Dalam Filament, Tabs sering dipakai untuk memecah form kompleks menjadi beberapa kelompok input agar alur pengisian lebih terstruktur. Dengan cara ini, form tetap berada dalam satu halaman, tetapi pengalaman pengguna terasa lebih terarah dibanding menampilkan semua field sekaligus.
+
+### 4. Bagaimana jika tab terlalu banyak?
+Jika jumlah tab terlalu banyak, navigasi justru menjadi membingungkan dan tujuan penyederhanaan UI tidak tercapai. Solusinya adalah menggabungkan tab yang mirip, memindahkan bagian opsional ke komponen lain (misalnya collapsible section), atau menggunakan wizard jika alurnya berurutan. Prinsipnya, jumlah tab sebaiknya tetap secukupnya agar mudah dipahami dan cepat diakses.
+</details>
+
+---
