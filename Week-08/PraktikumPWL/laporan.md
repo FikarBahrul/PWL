@@ -108,3 +108,85 @@ Relasi tetap bisa di-sort karena Filament secara otomatis menangani join antar t
 </details>
 
 ---
+
+## Jobsheet 2 (Jika sesuai GClass Jobsheet 11)
+<details>
+<summary>Detail</summary>
+
+**Membuat Search untuk Title**
+
+![Jobsheet-011_Filament](DokumentasiPWL/img/JS02_SearchTitle.png)
+<br><br>
+
+**Search untuk Title (Hasil)**
+![Jobsheet-011_Filament](DokumentasiPWL/img/JS02_SearchTitle2.png)
+<br><br>
+
+**Membuat Search untuk Slug**
+
+![Jobsheet-011_Filament](DokumentasiPWL/img/JS02_SearchSlug.png)
+<br><br>
+
+**Search untuk Slug (Hasil)**
+
+![Jobsheet-011_Filament](DokumentasiPWL/img/JS02_SearchSlug2.png)
+<br><br>
+<br><br>
+
+**Membuat Search untuk Category**
+
+![Jobsheet-011_Filament](DokumentasiPWL/img/JS02_SearchCategory.png)
+<br><br>
+
+**Search untuk Category (Hasil)**
+
+![Jobsheet-011_Filament](DokumentasiPWL/img/JS02_SearchCategory2.png)
+<br><br>
+<br><br>
+
+**Membuat Filter untuk Created At**
+
+![Jobsheet-011_Filament](DokumentasiPWL/img/JS02_FilterCreatedAt.png)
+<br><br>
+
+**Filter untuk Created At (Hasil)**
+
+![Jobsheet-011_Filament](DokumentasiPWL/img/JS02_FilterCreatedAt2.png)
+
+<br><br>
+<br><br>
+
+**Membuat Query Logic untuk Created At**
+
+![Jobsheet-011_Filament](DokumentasiPWL/img/JS02_QueryLogicCreatedAt.png)
+<br><br>
+
+**Membuat Query Logic untuk Created At (Hasil Logika)**
+![Jobsheet-011_Filament](DokumentasiPWL/img/JS02_QueryLogicCreatedAt2.png)
+<br><br>
+<br><br>
+
+**Membuat Filter untuk Created At(Relasi Dengan Category)**
+![Jobsheet-011_Filament](DokumentasiPWL/img/JS02_FilterCreatedAtCategory.png)
+<br><br>
+
+**Membuat Filter untuk Created At(Relasi Dengan Category)(Hasil)**
+![Jobsheet-011_Filament](DokumentasiPWL/img/JS02_FilterCreatedAtCategory2.png)
+ 
+## H. Analisis & Diskusi
+
+### 1. Mengapa search tidak cocok untuk filter tanggal?
+Search (text search) dirancang untuk pencocokan teks/substring dan tidak sensitif terhadap format waktu. Field tanggal biasanya menyimpan tanggal + waktu (`datetime`), sehingga pencarian teks akan sulit menangkap semua variasi format dan rentang (mis. semua record pada satu hari). Untuk kebutuhan tanggal lebih tepat menggunakan filter berbasis DatePicker yang menghasilkan query `whereDate` atau range, sehingga hasilnya akurat dan konsisten.
+
+### 2. Apa fungsi `relationship()` pada `SelectFilter`?
+`relationship('category', 'name')` memberi tahu Filament bahwa opsi filter diambil dari relasi Eloquent `category` dan menampilkan kolom `name` sebagai label. Filament otomatis memuat (preload) data relasi dan membuat filter yang menghubungkan `category_id` ke tabel categories, sehingga pengguna bisa memilih kategori tanpa menulis query manual.
+
+### 3. Mengapa kita perlu `whereDate()` pada query filter?
+Kolom `created_at` biasanya bertipe `datetime` (mencakup waktu). Jika ingin memfilter berdasarkan tanggal saja (abaikan jam), gunakan `whereDate('created_at', $date)` supaya perbandingan hanya pada bagian tanggal, bukan seluruh timestamp. Ini mencegah mismatch ketika waktu berbeda namun tanggalnya sama.
+
+### 4. Apa perbedaan `searchable()` dan `filters()`?
+`searchable()` mengaktifkan pencarian teks (global atau per-kolom) dan berguna untuk menemukan record lewat kata kunci cepat. `filters()` menyediakan kontrol terstruktur (DatePicker, SelectFilter, dll.) yang menghasilkan query spesifik (mis. range, relasi, exact match). Singkatnya: `searchable()` untuk pencarian teks fleksibel; `filters()` untuk kriteria terstruktur dan presisi.
+
+</details>
+
+---
