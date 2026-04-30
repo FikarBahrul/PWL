@@ -187,6 +187,7 @@ Kolom `created_at` biasanya bertipe `datetime` (mencakup waktu). Jika ingin memf
 ### 4. Apa perbedaan `searchable()` dan `filters()`?
 `searchable()` mengaktifkan pencarian teks (global atau per-kolom) dan berguna untuk menemukan record lewat kata kunci cepat. `filters()` menyediakan kontrol terstruktur (DatePicker, SelectFilter, dll.) yang menghasilkan query spesifik (mis. range, relasi, exact match). Singkatnya: `searchable()` untuk pencarian teks fleksibel; `filters()` untuk kriteria terstruktur dan presisi.
 
+
 </details>
 
 ---
