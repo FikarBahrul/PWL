@@ -24,4 +24,5 @@
 | **Minggu 10 dan Minggu 11**  | <a href="https://github.com/FikarBahrul/PWL/blob/main/Week-10&11/PraktikumPWL/laporan.md">Week-10&11</a> |
 | **Minggu 12**  | <a href="https://github.com/FikarBahrul/PWL/blob/main/Week-12/PraktikumPWL/laporan.md">Week-12</a> |
 | **Minggu 13**  | <a href="https://github.com/FikarBahrul/PWL/blob/main/Week-13/PraktikumPWL/laporan.md">Week-13</a> |
+| **Minggu 14**  | <a href="https://github.com/FikarBahrul/PWL/blob/main/Week-14/PraktikumPWL/laporan.md">Week-14</a> |
 ---
