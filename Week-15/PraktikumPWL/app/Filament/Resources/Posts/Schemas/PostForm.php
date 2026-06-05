@@ -1,0 +1,73 @@
+<?php
+
+namespace App\Filament\Resources\Posts\Schemas;
+
+use Filament\Schemas\Schema;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\ColorPicker;
+use Filament\Forms\Components\MarkdownEditor;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Checkbox;
+use Filament\Forms\Components\DateTimePicker;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Components\Group;
+use App\Models\Category;
+
+class PostForm
+{
+    public static function configure(Schema $schema): Schema
+    {
+        return $schema
+            ->components([
+                Section::make("Post Details")
+                    ->description("Fill in the details of the post")
+                    ->icon("heroicon-o-document-text")
+                    ->schema([
+                        Group::make([
+                            TextInput::make("title")
+                                ->rules("required|min:3|max:10"),
+                            TextInput::make("slug")
+                                ->rules("required")
+                                ->unique()
+                                ->validationMessages([
+                                    "unique" => "Slug must be unique",
+                                ]),
+                            Select::make("category_id")
+                                ->relationship("category", "name")
+                                ->options(Category::all()->pluck("name", "id"))
+                                ->required()
+                                // ->preload()
+                                ->searchable(),
+                            ColorPicker::make("color"),
+                        ])->columns(2),
+                        MarkdownEditor::make("body"),
+                    ])
+                    ->columnSpan(2),
+
+                Group::make([
+                    Section::make("Image Upload")
+                        ->schema([
+                            FileUpload::make("image")
+                                ->required()
+                                ->disk("public")
+                                ->directory("posts")
+                                ->deletable(),
+                        ]),
+
+                        Section::make("Meta Information")
+                        ->schema([
+                                // Use relationship multi-select for normalized tags
+                                Select::make('tags')
+                                    ->label('Tags')
+                                    ->relationship('tags', 'name')
+                                    ->multiple()
+                                    ->preload(),
+                            Checkbox::make("published"),
+                            DateTimePicker::make("published_at"),
+                        ]),
+                ])->columns(1),
+            ])
+            ->columns(3);
+    }
+}
